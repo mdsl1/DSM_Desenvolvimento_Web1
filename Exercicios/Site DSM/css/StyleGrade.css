@@ -1,0 +1,135 @@
+/*Reset de configurações*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*Título e Logos*/
+#TitleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.LogoCSP{
+    width: 270px;
+    height:fit-content;
+    margin: 0.5rem 0;
+}
+.LogoDSM{
+    width: 200px;
+    height:fit-content;
+}
+#Title{
+    color: rgb(34, 86, 97);
+    font-size: 2.5rem;
+}
+/*Guia de Navegação*/
+.divisória{
+    color: #225661;
+    border-width: 1px;
+    border-color: #225661;
+    margin: 0;
+}
+#Guia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+#Guia a:link, #Guia a:visited{
+    color:#025a6c;
+}
+#Guia a:hover{
+    color:#0396b3;
+    font-style: italic;
+}
+/*Conteúdo principal*/
+.MainContainer{
+    margin: 1rem 0.7rem;
+}
+.MainContainer h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #06343d;
+}
+/*Tabela*/
+#TableContainer{
+    border-collapse:collapse;
+    text-align: left;
+    font-size: 1.2rem;
+    border: 5px double #0097b5;
+    color:#9f0000;
+}
+#TableContainer tr, #TableContainer td, #TableContainer th{
+    border: 2px solid #025a6c;
+    padding: 0.5rem;
+}
+#TableContainer th{
+    background-color: #013c48;
+    border-bottom: 5px double #0097b5;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+.DevWeb{
+    color:#009f18;
+}
+#TableContainer td span{
+    color: #004e5e;
+    text-decoration: underline;
+}
+#TableContainer td span::before{
+    content: "(";
+}
+#TableContainer td span::after{
+    content: ")";
+}
+/*Link p/ download da grade*/
+.MainContainer a:link, #TableContainer a:visited{
+    color:#0096b5;
+}
+.MainContainer a:hover{
+    color:#00bbe0;
+    font-style: italic;
+}
+.MainContainer a::before{
+    content: "**";
+}
+/*Rodapé*/
+footer{
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+}
+.Forms{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.Forms label, .Forms input{
+    margin: 0 0.5rem 0 0.5rem;
+    align-content: center;
+    font-weight: bold;
+}
+.break{
+    float:left;
+}
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.copyright a:visited, .copyright a:link{
+    text-transform: capitalize;
+    color: #4f0055;
+}
+.copyright a:hover{
+    font-style: italic;
+    color: #bc00ca;
+}

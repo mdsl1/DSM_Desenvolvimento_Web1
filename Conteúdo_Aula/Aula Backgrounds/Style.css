@@ -1,0 +1,31 @@
+body{
+    background-color: #002519; /*Cor do fundo*/
+    background-image: url("Midias/wu.png"); /*Define a imagem que ficará de fundo*/
+    background-repeat:no-repeat;   /*Define se vai repetir ou não, também dá pra repetir horizontal(x) ou verticalmente(y)*/
+    background-attachment: fixed;  /*Define se a imagem de fundo vai ficar fixa ou andar junto com o scroll*/
+    background-size: 100px; /*Tamanho da imagem de fundo*/
+    background-position: center center; /*Define a posição da imagem de fundo, precisa colocar 2 valores. ex right top, left bottom, center center*/
+}
+.mainDiv{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:flex-start;
+    margin: 5px;
+}
+.mainDiv div{
+    margin: auto;
+    width: 200px;
+    height: 1200px;
+    border: 5px solid #00fffb;
+}
+.div1{
+    background-image: url("Midias/bg_repeat.jpg");
+}
+.div2{
+    background-image: url("Midias/bg_repeatx.jpg");
+    background-repeat: repeat-x;
+}
+.div3{
+    background-image: url("Midias/bg_repeaty.jpg");
+    background-repeat: repeat-y;
+}

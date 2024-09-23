@@ -1,0 +1,188 @@
+/*Configurações comuns do site*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    margin: 0 2rem 2rem 2rem;
+    padding: 3px;
+    align-content: flex-start;
+}
+/*Cabeçalho*/
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+}
+.logo{
+    width: 75px;
+    margin: 0 18rem 0 0.5rem; /*Ordem de lados: Cima, direita, baixo, esquerda*/
+}
+.titulo{
+    font-size: 40px;
+    align-content: center;
+    color: #ff4500;
+}
+nav a{
+    margin-left: 0.5rem;
+}
+.divisória{
+    border-color: #ca3600;
+    border-width: 1px;
+    color: #ca3600;
+}
+/*Texto inicial*/
+header h2{
+    margin: 1.7rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+#introdução{
+    margin: 2rem 0.5rem;
+}
+a:visited, a:link{
+    text-transform: uppercase;
+    color: #ff7b00;
+}
+/*Categorias*/
+header h3{
+    margin: 1rem 0.5rem;
+    font-size: 1.1rem;
+}
+.categorias{
+    margin: 2rem 0.5rem;
+}
+ul li{
+    list-style:square;
+    margin: 0.1rem 1.2rem;
+}
+/*Hub de receitas*/
+.hub_receitas{
+    margin: 2rem 0.5rem 0 0.5rem;
+}
+.prato{
+    margin: 0.3rem 0.2rem 0.5rem 0.5rem; /*Ordem de lados: Cima, direita, baixo, esquerda*/
+}
+.prato h4{
+    margin: 0.5rem 0;
+}
+.prato h4::before{
+    content:"-";
+}
+.prato img{
+    margin: 0 0.5rem;
+    width: 350px
+}
+.prato a:visited, a:link{
+    text-transform: uppercase;
+    color: #de6700;
+}
+/*Rodapé*/
+footer{
+    margin: 1.5rem 0.5rem 0 0.5rem;
+}
+.newslater{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.copyright a:visited, .copyright a:link{
+    text-transform: capitalize;
+    color: #4f0055;
+}
+.copyright a:hover{
+    font-style: italic;
+    color: #bc00ca;
+}
+/*Edições para as páginas das receitas*/
+/*tabela e imagem do prato*/
+.ingredientes_img{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+.titulo_ingredientes{
+    margin: 1rem 0;
+    font-weight: bold;
+    text-align: center;
+}
+.tabela{
+    border-collapse:separate;
+    text-align: left;
+    font-size: 1.2rem;
+}
+td{
+    padding: 0.3rem 3rem 0.3rem 0.5rem; /*Ordem de lados: Cima, direita, baixo, esquerda*/
+    border-bottom: 1px solid #d93c03;
+}
+.img_prato img{
+    width: 570px;
+}
+.img_prato figcaption{
+    margin-left: 0.5rem;
+}
+/*Modo de preparo*/
+header h4{
+    margin: 1rem 0.5rem;
+}
+ol li{
+    margin: 0.3rem 0.5rem 0.3rem 2rem;  /*Ordem de lados: Cima, direita, baixo, esquerda*/
+    list-style:upper-roman;
+    text-align: left;
+}
+ol li::after{
+    content: ";";
+}
+/*Video Explicativo*/
+iframe{
+    margin: 1.7rem 0.5rem 0 1.5rem; /*Ordem de lados: Cima, direita, baixo, esquerda*/
+    width: 1000px;
+    height: 540px;
+}
+figcaption{
+    color: #ef4000;
+    margin: 0 0.5rem 1.7rem 3rem;
+}
+figcaption::before{
+    content: "-";
+}
+/*Dicas*/
+.dica{
+    list-style: square;
+    font-style: italic;
+    color:#de6700;
+}
+/*Tempo de forno*/
+.tempo_forno{
+    margin: 0.3rem 0.5rem 0.3rem 2rem;  /*Ordem de lados: Cima, direita, baixo, esquerda*/
+}
+/*Pagina Salgados*/
+.Titulo_Introdução{
+    margin: 1rem 12rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.tabela li{
+    list-style: none;
+    padding: 0.3rem 3rem 0.3rem 0.5rem; /*Ordem de lados: Cima, direita, baixo, esquerda*/
+    border-bottom: 1px solid #d93c03;
+}
+.tabela h4{
+    margin: 1rem 0 0.1rem 0;
+    font-weight: bold;
+    text-align: center;
+}

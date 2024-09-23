@@ -1,0 +1,127 @@
+/*Reset de configurações*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*Título e Logos*/
+#TitleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.LogoCSP{
+    width: 270px;
+    height:fit-content;
+    margin: 0.5rem 0;
+}
+.LogoDSM{
+    width: 200px;
+    height:fit-content;
+}
+#Title{
+    color: rgb(34, 86, 97);
+    font-size: 2.5rem;
+}
+/*Guia de Navegação*/
+.divisória{
+    color: #225661;
+    border-width: 1px;
+    border-color: #225661;
+    margin: 0;
+}
+#Guia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+#Guia a:link, #Guia a:visited{
+    color:#025a6c;
+}
+#Guia a:hover{
+    color:#0396b3;
+    font-style: italic;
+}
+/*Conteúdo principal*/
+.MainContainer{
+    margin: 1rem 0.7rem;
+    font-size: 1.1rem;
+}
+.MainContainer h2{
+    text-align:left;
+    font-size: 1.7rem;
+    margin: 1.5rem 3rem;
+    color: #06343d;
+}
+.MainContainer li{
+    list-style: square;
+}
+.Prof{
+    font-size: 1.6rem;
+    margin: 1rem 0 0.3rem 1.5rem;
+    font-weight: bold;
+}
+.Prof::after{
+    content: ":";
+}
+.Disciplina{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    margin-left: 3rem;
+    color: #225661;
+}
+.Disciplina::after{
+    content: ";";
+}
+.ProfXimira{
+    font-size: 1.6rem;
+    margin: 1rem 0 0.3rem 1.5rem;
+    font-weight: bold;
+    color: #00738a;
+    font-style: italic;
+}
+.DiscXimira{
+    font-size: 1.4rem;
+    margin-left: 3rem;
+    font-weight: bold;
+    color: #0396b3;
+    font-style: italic;
+}
+/*Rodapé*/
+footer{
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+}
+.Forms{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.Forms label, .Forms input{
+    margin: 0 0.5rem 0 0.5rem;
+    align-content: center;
+    font-weight: bold;
+}
+.break{
+    float:left;
+}
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.copyright a:visited, .copyright a:link{
+    text-transform: capitalize;
+    color: #4f0055;
+}
+.copyright a:hover{
+    font-style: italic;
+    color: #bc00ca;
+}

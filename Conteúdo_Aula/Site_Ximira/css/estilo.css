@@ -1,0 +1,25 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(2, 21, 26);
+    color:white;
+    margin: 0;
+}
+h1, h2{
+    color: rgb(104, 177, 192);   
+    font-size: 1.7em;
+}
+dt strong{
+    font-style: bolder;
+    font-style:unset
+}
+nav{
+    color: blue;
+
+}
+table{
+    text-align: left;
+}
+i{
+    font-style: italic;
+    font-style: bolder;
+}

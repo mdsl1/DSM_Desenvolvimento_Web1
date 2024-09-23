@@ -1,0 +1,119 @@
+/*Reset de configurações*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+body{
+    background-color: #13005f;
+    background-image: linear-gradient(to right,#06001c,#0a0030,#14005d);
+}
+/*Cabeçalho*/
+#HeaderContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #06001c;
+}
+#Logo{
+    width: 150px;
+    height:fit-content;
+    margin: 0.2rem 0 0.2rem 1rem;
+}
+#MainTitle{
+    font-size: 2.5rem;
+    text-shadow: #12c0ff 0 0.2rem 0;/*Respectivamente: Cor da sombra, Deslocamento pra direita, deslocamento para baixo, percentual de blur*/
+}
+#CategoryList{
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+}
+.Category:link, .Category:visited{
+    color: #0080ff;
+}
+.Category:hover{
+    color:#00f891;
+    text-shadow: #ffffff 0 0 0.3rem;
+}
+.divisória{
+    border-width: 2px;
+    border-color: #fff;
+}
+/*Guia de jogos*/
+#GameListContainer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.CategoryTitle{
+    font-size: 2rem;
+    /*Etapas para deixar com degradê*/
+    background-image: linear-gradient(to right, #14b4fe, #00f891 );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+/*Conteudo principal do site*/
+#GameContent{
+    margin: 0.3rem 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.GamePag{
+    width: 45%;
+    text-align: center;
+    margin: 1rem;
+    padding: 0.3rem 0.6rem;
+    border: #12c0ff 5px double;
+    background-image: linear-gradient(to bottom, #06001c, #fff);
+}
+.GameTitle{
+    font-size: 1.3rem;
+    text-shadow: #00f891 0 0 0.4rem;
+}
+.GamePhoto{
+    width: 640px;
+    height:fit-content;
+    border: #7300ff 3px solid;
+}
+.GameLink{
+    font-size: 1.2rem;
+}
+.GameLink:link, .GameLink:visited{
+    color: #0058af;
+}
+.GameLink:hover{
+    color: #25baff;
+    text-shadow: #00f891 0 0 0.4rem;
+}
+/*Rodapé*/
+#FooterContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+#FooterContainer p{
+    color: #fff;
+    text-shadow: #00f891 0 0 0.4rem;
+}
+#FooterContainer a:visited, #FooterContainer a:link{
+    text-transform: capitalize;
+    color: #9700a2;
+}
+#FooterContainer a:hover{
+    color: #ea00fb;
+    text-shadow: #f67cff 0 0 0.4rem;
+}

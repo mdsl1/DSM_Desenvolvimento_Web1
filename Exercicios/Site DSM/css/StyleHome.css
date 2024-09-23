@@ -1,0 +1,112 @@
+/*Reset de configurações*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*Título e Logos*/
+#TitleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.LogoCSP{
+    width: 270px;
+    height:fit-content;
+    margin: 0.5rem 0;
+}
+.LogoDSM{
+    width: 200px;
+    height:fit-content;
+}
+#Title{
+    color: rgb(34, 86, 97);
+    font-size: 2.5rem;
+}
+/*Guia de Navegação*/
+.divisória{
+    color: #225661;
+    border-width: 1px;
+    border-color: #225661;
+    margin: 0;
+}
+#Guia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+#Guia a:link, #Guia a:visited{
+    color:#025a6c;
+}
+#Guia a:hover{
+    color:#0396b3;
+    font-style: italic;
+}
+/*Conteúdo principal*/
+.MainContainer{
+    margin: 1rem 0.7rem;
+}
+.InfoContainer{
+    margin: 2rem 0.7rem;
+}
+.InfoContainer h2, .InfoContainer h3{
+    margin: 0.3rem 0;
+    font-size: 1.1rem;
+    color: #06343d;
+}
+.InfoContainer li{
+    margin-left: 1.2rem;
+    list-style: square;
+}
+.InfoContainer li::after{
+    content: ";";
+}
+#LocalContainer h4{
+    margin: 0.7rem 0;
+    font-size: 1rem;
+    color:#025a6c;
+    text-align: center;
+}
+#LocalContainer iframe{
+    display: flex;
+    margin: 0 auto;
+    border: 3px dotted #025a6c;
+}
+/*Rodapé*/
+footer{
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+}
+.Forms{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.Forms label, .Forms input{
+    margin: 0 0.5rem 0 0.5rem;
+    align-content: center;
+    font-weight: bold;
+}
+.break{
+    float:left;
+}
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.copyright a:visited, .copyright a:link{
+    text-transform: capitalize;
+    color: #4f0055;
+}
+.copyright a:hover{
+    font-style: italic;
+    color: #bc00ca;
+}

@@ -1,0 +1,107 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    font-size: 1.1rem;
+}
+#pageHeader{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; /*Alinha na horizontal*/
+    align-items: center; /*Alinha na vertical*/
+    background-color: #0c5599;
+    color: #fff;
+}
+#pageHeader h1{
+    font-size: 2.3rem;
+    text-shadow: #348e5e 0 0 0.7rem;
+}
+#pageHeader img{
+    width: 250px;
+}
+#pageGuide{
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    background-color: #000000;
+}
+#pageGuide a{
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 15px;
+}
+#pageGuide a:hover{
+    background-color: #348e5e;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+.sidebar img{
+    width: 15em;
+    padding: 10px 0 ;
+}
+.sidebar{
+    background-color:#02204f;
+    color: #fff;
+    padding: 3px 10px;
+    flex: 30%;/*DEFINE O TAMANHO DA FLEX*/
+}
+.sidebar section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar p{
+    text-align: justify;
+}
+.mainContent{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 15px;
+}
+.ditadosXimira{
+    float: right;
+    margin-left: 15px;
+    padding: 5px;
+    border: 3px dotted #282525;
+    background-color: #96b4ff;
+}
+.lema{
+    font-style: italic;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #0c5599;
+    text-shadow: #35ff93 0 0 0.3rem;
+}
+.lema::before{
+    content: open-quote;
+}
+.lema::after{
+    content: close-quote;
+}
+.aulasContainer{
+    display: flex;
+    flex-flow: row wrap;
+}
+.aulaCard{
+    flex: 5;
+    background-color: #fff;
+    border: 5px double #1f93e0;
+    margin: 0 5px;
+    text-align: center;
+}
+.aulaCard p{
+    text-align: justify;
+    padding: 0 5px;
+}
+.aulaCard a{
+    text-align: right;
+    display: block;
+    padding-right: 5px;
+    text-decoration: none;
+}
+.aulaCard img{
+    width: 300px;
+}

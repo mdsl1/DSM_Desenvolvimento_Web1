@@ -1,0 +1,133 @@
+/*Reset de configurações*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 100%;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+body{
+    background-color: #13005f;
+    background-image: linear-gradient(to left,#120253,#040013);
+}
+/*Configurações do exercicio*/
+.Importante{
+    font-weight: bolder;
+    font-size: 1.4rem;
+    color: #e10000;
+}
+.Importantissimo{
+    font-weight: bolder;
+    font-size: 1.9rem;
+    color: #e10000;
+}
+/*Título e Logos*/
+#TitleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(12, 0, 40);
+}
+#Logo{
+    width: 80px;
+    height:fit-content;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+#Title{
+    font-size: 3rem;
+    color: #fff;
+    flex-grow: 1;
+    text-align: center;
+}
+/*Guia de Navegação*/
+#Guia{
+    background-color: #040013;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#Guia a{
+    font-size: 1.2rem;
+    margin: 0 3rem;
+    text-align: center;
+}
+#Guia a:link, #Guia a:visited{
+    color: #49a4ff;
+}
+#Guia a:hover{
+    color: #00f891;
+}
+.divisória{
+    border-width: 2px;
+    border-color: #ffffff;
+}
+/*Conteúdo principal*/
+#MainContainer{
+    margin: 1.5rem 3rem;
+    font-size: 1.2rem;
+}
+/*Citação*/
+#MainContainer aside{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+#MainContainer aside::before{
+    content: open-quote;
+    width: 5rem;
+    font-size: 30px;
+    color: #49a4ff;
+}
+#MainContainer aside::after{
+    content: close-quote;
+    font-size: 30px;
+    color: #49a4ff;
+}
+/*Lista de formações*/
+#MainContainer h2{
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 2rem;
+}
+.ListContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ListContainer dt, .ListContainer p{
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+.ListContainer dd
+.ListContainer dt::before, .ListContainer p::before{
+    content: "•";
+    padding-right: 8px;
+    color: #49a4ff;
+}
+.ListContainer dt::after{
+    content: ":";
+}
+.ListContainer p::after{
+    content: ";";
+}
+/*Rodapé*/
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+.copyright a:visited, .copyright a:link{
+    text-transform: capitalize;
+    color: #9700a2;
+}
+.copyright a:hover{
+    font-style: italic;
+    color: #ea00fb;
+}
