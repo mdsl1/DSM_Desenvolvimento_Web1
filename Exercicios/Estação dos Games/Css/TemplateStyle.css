@@ -29,6 +29,7 @@ body{
     text-shadow: #12c0ff 0 0.2rem 0;/*Respectivamente: Cor da sombra, Deslocamento pra direita, deslocamento para baixo, percentual de blur*/
 }
 #CategoryList{
+    flex: 40%;
     font-size: 1.5rem;
     display: flex;
     flex-flow: row nowrap;

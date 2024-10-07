@@ -1,0 +1,133 @@
+/*Reset de configurações*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 100%;
+}
+body{
+    background-image: linear-gradient(to right,#18001c,#260030,#40004f);
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*Cabeçalho*/
+#headerContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #17001c;
+}
+#logo{
+    width: 140px;
+    height:fit-content;
+    margin: 0 0 0 1rem;
+}
+#pagContainer{
+    width: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#pagContainer a:link, #pagContainer a:visited{
+    color: #fff;
+    padding: 0.7rem 1rem;
+    margin: 0 5px;
+}
+#pagContainer a:hover{
+    color: #ff00ff;
+    text-shadow: #fff 0 0 10px;
+    border: #fff 2px solid;
+    border-radius: 10px;
+    box-shadow: #e1ff00 0 0 20px 0;
+}
+#pagContainer a:last-child{
+    margin-right: 2rem;
+}
+/*Breadcrumbs*/
+#breadcrumbs{
+    display: flex;
+    flex-direction: row;
+    background-color: #f1a9ff;
+    align-items: center;
+    height: 3vh;
+    border-top:#fff double 3px;
+    border-bottom: #fff double 3px;
+}
+#breadcrumbs a:link, #breadcrumbs a:visited{
+    color: #42003f;
+    padding: 0 0.5rem;
+    border-right: #42003f 2px solid;
+}
+#breadcrumbs a:first-child{
+    margin-left: 0.5rem;
+}
+#breadcrumbs a:hover{
+    color: #e1ff00;
+    text-shadow: #fff 0 0 10px;
+    background-color: #4a27a2;
+}
+/*Conteúdo principal (Sidebar e Main)*/
+main{
+    display: flex;
+    flex-flow: row nowrap;
+}
+/*Configurações da Sidebar*/
+#sidebarContainer{
+    flex: 21%;
+    background-image: linear-gradient(to left, #8f8800, #f5d000);
+    color: #17001c; 
+}
+#sidebarContainer h2{
+    font-size: 1.1rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+#sidebarContainer img{
+    width: 275px;
+    display: block;
+    margin: 0 auto;
+}
+#sidebarContainer figcaption{
+    font-size: 0.75rem;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+#sidebarContainer article{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 0.5rem 0.7rem;
+    font-size: 0.85rem;
+    line-height: 1.35;
+}
+#sidebarContainer h3{
+    font-weight: bolder;
+    margin: 0.7rem 0 0.3rem 0.5rem;
+}
+.textSidebar{
+    text-align: left;
+    margin: 0.5rem;
+}
+.textSidebar li{
+    margin: 0.2rem 0.5rem;
+}
+.textSidebar li::marker{
+    color: #ff2dd1;
+    content: "✦";
+    font-size: 1.1rem;
+}
+#sidebarContainer p span{
+    color:#a40081;
+    text-shadow: #ffffff 0 0 0.3rem;
+    font-size: 0.95rem;
+    text-align: justify;
+    font-weight: bolder;
+}
+#mainContent{
+    flex: 79%;  
+}

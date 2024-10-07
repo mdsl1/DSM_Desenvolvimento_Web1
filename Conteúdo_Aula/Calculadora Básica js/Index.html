@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ang="pt-br">
+    <head>
+        <title>Calculadora</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+    </head>
+    <body>
+        <h1>Calculadora Básica!</h1>
+        <form action="#">
+            <label for="v1">Valor 1:</label>
+                <input type="text" id="v1" name="v1">
+            <br>
+        <label for="v2">Valor 2:</label>
+            <input type="text" id="v2" name="v2">
+        <label for="op">Operações:</label>
+        <br>
+            <input type="radio" name="op" id="soma" value="+">+</input>
+            <input type="radio" name="op" id="subtracao" value="-">-</input>
+            <input type="radio" name="op" id="mult" value="*">*</input>
+            <input type="radio" name="op" id="divisao" value="/">/</input>
+            <br>
+            <input type="button" value="Calcular" id="btnClicar">
+        </form>
+        <div id="resultado"></div>
+        <script type="text/javascript" src="Script.js"></script>
+    </body>
+</html>
