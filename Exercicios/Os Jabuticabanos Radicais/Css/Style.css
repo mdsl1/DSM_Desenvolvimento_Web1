@@ -7,9 +7,9 @@
 }
 body{
     background-image: linear-gradient(to right,#18001c,#260030,#40004f);
-    color: #fff;
     font-family:Arial, Helvetica, sans-serif;
 }
+
 /*Cabeçalho*/
 #headerContainer{
     display: flex;
@@ -35,10 +35,13 @@ body{
     color: #fff;
     padding: 0.7rem 1rem;
     margin: 0 5px;
+    transition: transform 0.3s ease;
+
 }
 #pagContainer a:hover{
     color: #ff00ff;
     text-shadow: #fff 0 0 10px;
+    transform: scale(1.05);
     border: #fff 2px solid;
     border-radius: 10px;
     box-shadow: #e1ff00 0 0 20px 0;
@@ -46,7 +49,8 @@ body{
 #pagContainer a:last-child{
     margin-right: 2rem;
 }
-/*Breadcrumbs*/
+
+/*Configurações das Breadcrumbs*/
 #breadcrumbs{
     display: flex;
     flex-direction: row;
@@ -57,9 +61,12 @@ body{
     border-bottom: #fff double 3px;
 }
 #breadcrumbs a:link, #breadcrumbs a:visited{
+    font-size: 0.9rem;
     color: #42003f;
     padding: 0 0.5rem;
-    border-right: #42003f 2px solid;
+}
+#breadcrumbs a:not(:last-child){
+    border-inline-end: solid 2px #42003f;
 }
 #breadcrumbs a:first-child{
     margin-left: 0.5rem;
@@ -69,11 +76,13 @@ body{
     text-shadow: #fff 0 0 10px;
     background-color: #4a27a2;
 }
-/*Conteúdo principal (Sidebar e Main)*/
+
+/*Conteúdo principal (Sidebar e Conteúdos)*/
 main{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row nowrap;   
 }
+
 /*Configurações da Sidebar*/
 #sidebarContainer{
     flex: 21%;
@@ -101,17 +110,17 @@ main{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    margin: 0.5rem 0.7rem;
+    margin: 0.5rem 0.7rem 0.9rem 0.7rem;
     font-size: 0.85rem;
     line-height: 1.35;
 }
 #sidebarContainer h3{
     font-weight: bolder;
-    margin: 0.7rem 0 0.3rem 0.5rem;
+    margin: 0.5rem 0 0.3rem 0.3rem;
 }
 .textSidebar{
     text-align: left;
-    margin: 0.5rem;
+    margin: 0.5rem 0.2rem;
 }
 .textSidebar li{
     margin: 0.2rem 0.5rem;
@@ -128,6 +137,265 @@ main{
     text-align: justify;
     font-weight: bolder;
 }
+
+/*Configurações do Conteúdo Principal*/
 #mainContent{
-    flex: 79%;  
+    flex: 79%;
+    margin: 0.5rem 1rem;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-align: left;
+    line-height: 20px;
+}
+#mainContent h1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+    color: #e1ff00;
+    text-shadow: #27ffa5 0 0 0.7rem;
+}
+#mainContent p{
+    text-indent: 30px;
+    margin: 0.5rem 0 0.3rem 0;
+}
+#text_aside_Container{
+    display: flex;
+}
+#text_aside_Container p{
+    width: 100%;
+}
+#fraseInspiradora{
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #00f891 double 5px;
+    background-color: #a1f9d4;
+    color:#260030;
+    box-sizing: border-box;
+}
+#frase{
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+}
+#frase::before{
+    content: open-quote;
+    font-size: 3rem;
+}
+#frase::after{
+    content: close-quote;
+    font-size: 3rem;
+}
+#autor{
+    font-style: italic;
+    
+}
+#autor::before{
+    content: "~";
+    font-size: 1.2rem;
+}
+
+/*Configurações especificas da página "Sobre"*/
+/*Conteúdo principal*/
+#text_img_container{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 1.3rem;
+    justify-content: center;
+}
+#sobreImg{
+    width: 225px;
+    margin-right: 1.3rem;
+}
+/*Tabela*/
+#mainContent table{
+    font-size: 1.3rem;
+    border-collapse: collapse;
+    border: #27ffa5 double 5px;
+    margin: 0 auto;
+}
+#mainContent caption{
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 2rem 0 0.7rem 0;
+    color: #e1ff00;
+    text-shadow: #27ffa5 0 0 0.7rem;
+}
+#mainContent th{
+    padding: 0.6rem 3rem;
+    background-color: #00844d;
+    color: #e1ff00;
+}
+#mainContent tr, #mainContent td{
+    border: 2px solid #21ffa2;
+    padding: 0.5rem 3rem;
+    background-color: #a1f9d4;
+    color: #18001c;
+}
+
+/*Configurações especificas da página "Albuns"*/
+/*Conteúdo principal*/
+#albumList{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.album{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border: #27ffa5 double 5px;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    padding: 0.3rem 0.5rem;
+    background-color: #a1f9d4;
+    color: #40004f;
+}
+.album h2{
+    color: #00844d;
+    text-shadow: #e1ff00 0 0.1rem 0;
+    font-size: 1.2rem
+}
+.albumPhoto{
+    width: 325px;
+    margin: 0.2rem 0;
+    transition: transform 0.3s ease;
+}
+.albumPhoto:hover{
+    transform: scale(1.02);
+    border: #00f891 2px solid;
+    border-radius: 10px;
+    box-shadow: #e1ff00 0 0 20px;
+}
+.album p{
+    font-style: italic;
+    color: #00844d;
+    font-size: 1.3rem;
+}
+
+/*Configurações especificas das páginas dos albuns"*/
+/*Conteúdo principal*/
+#albumContainer img{
+    width: 325px;
+    margin: 0.2rem 1.5rem 0.2rem 0;
+}
+#musicListContainer h2{
+    font-size: 1.4rem;
+    margin: 2rem 0 0.5rem 0;
+    text-align: center;
+    color: #e1ff00;
+    text-shadow: #27ffa5 0 0 0.7rem;
+}
+#musicListContainer p{
+    text-align: center;
+    font-style: italic;
+}
+/*Configuração das músicas*/
+#musicList{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+.musicContainer{
+    margin: 0.5rem auto;
+    color: #e1ff00;
+    font-size: 1.1rem;
+    text-align: left;
+}
+.musicContainer h3{
+    margin-left: 1rem;
+}
+.musicContainer audio{
+    width: 65vw;
+}
+.musicContainer audio::-webkit-media-controls-panel{
+    background-color: #00f891;
+}
+
+/*Configurações especificas da página "Contato"*/
+/*Conteúdo principal*/
+form{
+    background-color: #a1f9d4;
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    width: 70vw;
+    height: fit-content;
+    flex-flow: column nowrap;
+    border-radius: 25px;
+    border: #00844d 7px double;
+}
+label{
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #260030;
+}
+label::before{
+    color: #ff2dd1;
+    content: "✦";
+    margin-right: 7px;
+    font-size: 1.1rem;
+}
+input:not(#submitbtn){
+    font-size: 1.1rem;
+    border-radius: 15px;
+    height: 5vh;
+    width: 68vw;
+    padding-left: 10px;
+    margin: 0 auto 0.5rem auto;
+}
+textarea{
+    font-size: 1.1rem;
+    width: 68vw;
+    height: 15vh;
+    padding: 10px;
+    margin: 0 auto 0.5rem auto;
+    border-radius: 15px;
+}
+#submitbtn{
+    width: 20vw;
+    height: 7vh;
+    font-size: 1.5rem;
+    margin: 0.3rem auto;
+    background-color: #f5d000;
+    border: #00844d 5px double;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+#submitbtn:hover{
+    color: #ff00ff;
+    text-shadow: #fff 0 0 10px;
+    transform: scale(1.1);
+    border: #fff 5px double;
+    box-shadow: #ff00ff 0 0 30px 0;
+}
+/*Fim das configurações especificas*/
+
+/*Rodapé*/
+footer{
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    margin: 0.5rem 0.5rem;
+}
+.division{
+    color: #fff;
+}
+footer p{
+    color: #fff;
+    text-shadow: #00f891 0 0 0.4rem;
+}
+footer a:visited, footer a:link{
+    text-transform: capitalize;
+    color: #00f891;
+}
+footer a:hover{
+    color: #27ffa5;
+    text-shadow: #a1f9d4 0 0 0.4rem;
 }

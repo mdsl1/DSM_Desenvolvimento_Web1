@@ -1,0 +1,16 @@
+.caixa{
+    width: 500px;
+    height: 500px;
+    border: 5px solid #000;
+    margin: auto;
+}
+.caixa img{
+    width: 500px;
+    height: 500px;
+}
+.bgColor{
+    background-color: #00f;
+}
+.bgNewColor{
+    background-color: #f00;
+}
