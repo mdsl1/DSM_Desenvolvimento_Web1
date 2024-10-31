@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+    /*Reset de configurações*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 100%;
+}
+/*Configuração de fontes e cores padrão*/
+body{
+    background-color: #000;
+    font-family:"Rubik Wet Paint", system-ui;
+}
+/*Cabeçalho*/
+/*Título do site*/
+header h1{
+    color: #f00;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0.2rem 0 0.5rem 0;
+}
+/*Olhos que aparecem*/
+#eyeContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 40vh;
+    justify-content: center;
+}
+.eye{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5rem 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: piscar1 3s infinite ease-in-out;
+}
+.pupil{
+    width: 5px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #f00;
+    animation: piscar2 3s infinite ease-in-out;
+}
+/*Animação dos olhos para piscar*/
+@keyframes piscar1 {
+    0%, 90%, 100% {
+        height: 20px;
+    }
+    95% {
+        height: 0;
+    }
+}
+@keyframes piscar2 {
+    0%, 90%, 100% {
+        height: 5px;
+    }
+    95% {
+        height: 0;
+    }
+}
+/* Estilo da pupila quando o jogador perde */
+.pupil.lost {
+    background-color: red;
+    box-shadow: 0 0 10px 5px red; /* Adiciona brilho vermelho */
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+/*Configurações da mesa*/
+#tableContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    perspective: 500px;
+    height: 320px;
+    background: url("../Midias/backgroundTable3.png") no-repeat scroll bottom center;
+    background-size:cover;
+}
+#cardContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+    width: 100%;
+    height: 100%;
+    
+}
+#l1{
+    height: fit-content;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+    transform: rotateX(55deg); /* Inclinando para simular a perspectiva */
+    transform-origin: top bottom;
+    margin-bottom: -50px;
+    /*O problema da distância vertical eu consegui resolver, agora a horizontal (que expande o tamanho da tela) não teve como*/
+}
+#l1 .card{
+    margin: 0 10px;
+    width: 75px;
+    height: 125px;
+}
+#l2{
+    height: fit-content;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+    transform: rotateX(55deg); /* Inclinando para simular a perspectiva */
+    transform-origin: top bottom;
+    margin-bottom: -40px;
+    /*O problema da distância vertical eu consegui resolver, agora a horizontal (que expande o tamanho da tela) não teve como*/
+}
+#l2 .card{
+    margin: 0 15px;
+    width: 90px;
+    height: 135px;
+}
+#l3{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+    transform-origin: top bottom;
+    transform: rotateX(55deg); /* Inclinando para simular a perspectiva */
+    margin-bottom: 35px;
+    /*O problema da distância vertical eu consegui resolver, agora a horizontal (que expande o tamanho da tela) não teve como*/
+}
+#l3 .card{
+    margin: 0 25px;
+    width: 105px;
+    height: 158px;
+}
+.card{
+    position: relative;
+    box-shadow: 0 0 15px 1px #f00;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+}
+.face{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #f00;
+}
+.flipped{
+    background: url("../Midias/CardFlipped.png") no-repeat;
+    background-size: cover;
+    order: 1;
+    backface-visibility: hidden;
+}
+.back{
+    background-color: #f00;
+    transform: rotateY(180deg);
+    background-size: cover;
+    background-position: center;
+}
+.disabledCard{
+    box-shadow: 0 0 15px 10px #f00;
+    opacity: 0.5;
+    filter: saturate(1) contrast(3);
+}
+.revealCard{
+    transform: rotateY(180deg);
+    box-shadow: 0 0 15px 5px #f00;
+}
+/*Informações do jogo*/
+#infoContaner{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    font-size: 1.3rem;
+    height: 14vh;
+    border: #f00 solid 3px;
+    background-image: linear-gradient(to bottom, #b10000, #740000 ,#420000);
+}
+.infoSection{
+    display: flex;
+    flex-flow: column nowrap;
+}

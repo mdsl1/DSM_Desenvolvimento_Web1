@@ -1,7 +1,24 @@
 function esconder(){
     let dits = document.getElementsByClassName("ditadosximira");
-    dits[0].style.display = "none";
-    dits[1].style.display = "none";
+    let i =0
+    while(i<dits.length){
+        if (dits[i].style.display == "none"){
+            dits[i].style.display = "block";
+        }
+        else{
+            dits[i].style.display = "none";
+        }
+        i++;
+    }
 }
 
-document.getElementById("clkHide").addEventListener("click", esconder);
+function addClassEnter(ev){
+    this.classList()
+}
+
+
+
+function vinculaEvento(){
+    document.getElementById("clkHide").addEventListener("click", esconder);
+}
+
